@@ -1,0 +1,50 @@
+.page-wrapper {
+    transition: 1s;
+    perspective: 3000px;
+    -webkit-perspective: 3000px;
+    transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+.page-wrapper > div {
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% -50vw;
+}
+
+.page-wrapper .page {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+    transform-origin: 50% 50% -50vw;
+    perspective-origin: 50% 50%;
+    backface-visibility: hidden;
+}
+
+.previous.left-page {
+    transform: rotateY(-90deg);
+    transition: 0s!important;
+}
+
+.next.left-page {
+    transform: rotateY(-90deg);
+}
+
+.current-page {
+    transform: rotateY(0deg);
+    transition: 1s!important;
+}
+
+.previous.right-page {
+    transform: rotateY(90deg);
+}
+
+.next.right-page {
+    transform: rotateY(90deg);
+    transition: 0s!important;
+}
+
+.back-page {
+    transform: rotateY(180deg);
+}

@@ -1,0 +1,22 @@
+header {
+    height: 60px;
+    line-height: 50px;
+}
+
+header .next-btn {
+    font-weight: bold;
+    margin-right: 50px;
+    padding: 5px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+header .previous-btn {
+    font-weight: bold;
+    margin-left: 50px;
+    padding: 5px;
+    float: left;
+    display: flex;
+    align-items: center;
+}

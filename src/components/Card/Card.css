@@ -1,0 +1,22 @@
+.card {
+    background: white;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px #808080;
+    width: 150px;
+    position: relative;
+}
+
+.card > div {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.card > div > .logo-char {
+    font-size: 100px;
+}

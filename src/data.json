@@ -1,0 +1,42 @@
+{
+    "projects": [
+        {
+            "name": "javascript",
+            "image": "/images/javascript.png",
+            "list": [
+                {
+                    "title": "Supplements",
+                    "github": "https://github.com/harshkanjariya/supplements",
+                    "description": "Supplements is a lite weight javascript library that provides simple function used by a javascript developer in daily life."
+                },
+                {
+                    "title": "Express schema validator",
+                    "github": "https://github.com/harshkanjariya/express-schema-validator",
+                    "description": "A validator for express request body. Validator is a middleware that ensures data and merges req.body and req.query into single req.data"
+                },
+                {
+                    "title": "Steganography",
+                    "github": "https://github.com/harshkanjariya/any-steganography",
+                    "description": "Steganography package that supports steganography inside jpg,png,pdf etc. with the additional security of aes-256 encryption."
+                },
+                {
+                    "title": "Maze generator",
+                    "github": "https://github.com/harshkanjariya/maze-generator",
+                    "preview": "https://harshkanjariya.github.io/maze-generator",
+                    "description": "A fun code written that create random maze everytime."
+                }
+            ]
+        },
+        {
+            "name": "c++",
+            "image": "/images/c++.png",
+            "list": [
+                {
+                    "title": "Flappy Bird",
+                    "github": "https://github.com/harshkanjariya/flappy-bird",
+                    "description": "Supplements is a lite weight javascript library that provides simple function used by a javascript developer in daily life."
+                }
+            ]
+        }
+    ]
+}

@@ -3,17 +3,14 @@
     background: #e0e0e0;
 }
 
-/*.home-page:hover {*/
-/*    transform: rotateY(45deg);*/
-/*}*/
-
 .animated-title {
     margin-top: 40vh;
+    font-size: 30px;
 }
 
 .Typewriter {
     display: inline-block;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 .code-links {
@@ -34,4 +31,24 @@
 
 .code-links > div {
     margin: 0 10px;
+}
+
+@media only screen and (max-width: 700px) {
+    .animated-title {
+        font-size: 25px;
+    }
+    .social-links {
+        bottom: 25px;
+        left: 25px;
+    }
+    .code-links {
+        bottom: 25px;
+        right: 25px;
+    }
+    .social-links > div {
+        margin: 0 5px;
+    }
+    .code-links > div {
+        margin: 0 5px;
+    }
 }

@@ -1,8 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 import PageProps from '../../components/PageWrapper/PageProps';
 import Header from '../../components/Header/Header';
+import Cube from '../../components/Cube';
 
-const Projects2: React.FC<PageProps> = (
+const MainDiv = styled.div`
+  text-align: center;
+  padding: 100px;
+  position: relative;
+  perspective: 500px;
+`;
+
+const Background: React.FC<PageProps> = (
     {
         nextPage,
         previousPage,
@@ -22,8 +31,11 @@ const Projects2: React.FC<PageProps> = (
                 nextTitle="Home"
                 previousTitle="Projects"
             />
+            <MainDiv>
+                <Cube />
+            </MainDiv>
         </div>
     );
 };
 
-export default Projects2;
+export default Background;

@@ -40,11 +40,11 @@ const Home: React.FC<PageProps> = (
                 nextPage={nextPage}
                 previousPage={previousPage}
                 nextTitle="Projects"
-                previousTitle="Projects2"
+                previousTitle="Background"
             />
-            <h1 className="animated-title">
+            <div className="animated-title">
                 Hello, I&apos;m <Typewriter options={typewriterOptions} onInit={titleAnimation} />
-            </h1>
+            </div>
             <div className="social-links">
                 <HoverBox
                     src="/images/gmail.png"

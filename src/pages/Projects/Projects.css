@@ -1,0 +1,20 @@
+.projects-page {
+    background: #c0c0ff;
+}
+
+.card-list-label {
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.card-list {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    overflow-x: scroll;
+}
+
+.card-list .card{
+    margin: 10px;
+}

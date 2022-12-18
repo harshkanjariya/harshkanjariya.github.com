@@ -24,6 +24,12 @@
                     "github": "https://github.com/harshkanjariya/maze-generator",
                     "preview": "https://harshkanjariya.github.io/maze-generator",
                     "description": "A fun code written that create random maze everytime."
+                },
+                {
+                    "title": "Shared Online Editor",
+                    "github": "https://github.com/harshkanjariya/live-share",
+                    "preview": "https://shared-edit.web.app",
+                    "description": "An online editor which is synced between two users. Now sharing becomes buttery smooth."
                 }
             ]
         },

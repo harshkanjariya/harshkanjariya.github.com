@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "https://harshkanjariya.tech/portfolio/static/css/main.c10f9e20.css",
-    "main.js": "https://harshkanjariya.tech/portfolio/static/js/main.855022be.js",
-    "static/js/853.3f02d877.chunk.js": "https://harshkanjariya.tech/portfolio/static/js/853.3f02d877.chunk.js",
-    "static/media/motherboard.png": "https://harshkanjariya.tech/portfolio/static/media/motherboard.f6edbcea3720a82f43a6.png",
-    "static/media/windows-background.jpeg": "https://harshkanjariya.tech/portfolio/static/media/windows-background.088719fe83cebf2fb259.jpeg",
-    "index.html": "https://harshkanjariya.tech/portfolio/index.html",
-    "main.c10f9e20.css.map": "https://harshkanjariya.tech/portfolio/static/css/main.c10f9e20.css.map",
-    "main.855022be.js.map": "https://harshkanjariya.tech/portfolio/static/js/main.855022be.js.map",
-    "853.3f02d877.chunk.js.map": "https://harshkanjariya.tech/portfolio/static/js/853.3f02d877.chunk.js.map"
+    "main.css": "https://harshkanjariya.tech/static/css/main.f21eadff.css",
+    "main.js": "https://harshkanjariya.tech/static/js/main.5224f39a.js",
+    "static/js/853.3f02d877.chunk.js": "https://harshkanjariya.tech/static/js/853.3f02d877.chunk.js",
+    "static/media/motherboard.png": "https://harshkanjariya.tech/static/media/motherboard.f6edbcea3720a82f43a6.png",
+    "static/media/windows-background.jpeg": "https://harshkanjariya.tech/static/media/windows-background.088719fe83cebf2fb259.jpeg",
+    "index.html": "https://harshkanjariya.tech/index.html",
+    "main.f21eadff.css.map": "https://harshkanjariya.tech/static/css/main.f21eadff.css.map",
+    "main.5224f39a.js.map": "https://harshkanjariya.tech/static/js/main.5224f39a.js.map",
+    "853.3f02d877.chunk.js.map": "https://harshkanjariya.tech/static/js/853.3f02d877.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c10f9e20.css",
-    "static/js/main.855022be.js"
+    "static/css/main.f21eadff.css",
+    "static/js/main.5224f39a.js"
   ]
 }

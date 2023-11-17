@@ -1,0 +1,23 @@
+.pathView {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.clickablePath {
+  padding: 5px;
+  transition: .5s;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.clickablePath:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 0px 2px;
+}
+
+[data-theme="dark"] {
+  .clickablePath:hover {
+    background-color: hsl(0, 0, 19%);
+    box-shadow: rgba(255, 255, 255, 0.76) 0px 0px 2px;
+  }
+}

@@ -1,0 +1,62 @@
+.themeButton {
+    position: relative;
+    border-radius: 26px;
+    height: 24px;
+}
+
+.themeButton .checkbox {
+    display: none;
+}
+
+.label {
+    position: relative;
+    height: 24px;
+    width: 48px;
+    display: inline-block;
+    padding: 1px;
+    transition: .4s;
+    border-radius: 26px;
+    background-color: black;
+    border: 1px solid white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.label > * {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+.sun {
+    color: white;
+    transform: scale(.8);
+    position: absolute;
+    right: 2px;
+    top: 1px;
+}
+
+.moon {
+    color: white;
+    transform: scale(.8);
+    position: absolute;
+    left: 2px;
+    top: 1px;
+}
+
+.ball {
+    border-radius: 50%;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    transition: .4s;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.checkbox:checked + .label {
+    box-shadow: rgba(255, 255, 255, 0.16) 0px 1px 4px;
+}
+
+.checkbox:checked + .label > .ball {
+    transform: translateX(24px);
+}

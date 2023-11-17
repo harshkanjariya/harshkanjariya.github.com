@@ -1,0 +1,30 @@
+.contextMenu {
+  position: fixed;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  min-width: 150px;
+  opacity: 0;
+  transition: .3s opacity;
+}
+
+.contextMenu.active {
+  opacity: 1;
+}
+
+.option {
+  display: inline-block;
+  padding: 5px 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+}
+
+[data-theme="dark"] {
+  .option:hover {
+    background-color: #555555;
+  }
+}

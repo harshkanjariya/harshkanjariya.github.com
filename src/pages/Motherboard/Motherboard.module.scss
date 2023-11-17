@@ -1,0 +1,58 @@
+.motherboardPage {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color);
+}
+
+.motherboardWrapper {
+  overflow: auto;
+  position: relative;
+}
+
+.motherboard {
+  display: inline-block;
+  width: 5972px;
+  height: 4918px;
+  zoom: .16;
+  background: url("/../public/images/motherboard.png") no-repeat;
+  background-size: cover;
+}
+
+.mainText {
+  position: absolute;
+  left: 3757px;
+  top: 1717px;
+  color: black;
+  width: 1069px;
+  height: 876px;
+  font-size: 45px;
+  text-align: left;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+
+  table {
+    margin-left: 200px;
+  }
+
+  td {
+    padding: 10px 0;
+    vertical-align: top;
+  }
+
+  .topLabel {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    font-size: 100px;
+  }
+  .bottomLabel {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "github": {
+    "isDir": false,
+    "isLink": true,
+    "name": "Github",
+    "icon": "/icons/github.webp",
+    "links": {
+      "home": "https://github.com/harshkanjariya"
+    }
+  },
+  "stackoverflow": {
+    "isDir": false,
+    "isLink": true,
+    "name": "Stack Overflow",
+    "icon": "/icons/stackoverflow.png",
+    "links": {
+      "home": "https://stackoverflow.com/users/11619191/harsh-kanjariya"
+    }
+  },
+  "linkedin": {
+    "isDir": false,
+    "isLink": true,
+    "name": "Linkedin",
+    "icon": "/icons/linkedin.png",
+    "links": {
+      "home": "https://www.linkedin.com/in/harsh-kanjariya-276693176"
+    }
+  }
+}

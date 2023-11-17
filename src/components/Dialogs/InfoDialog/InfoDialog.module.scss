@@ -1,0 +1,22 @@
+.td {
+  padding: 5px 25px 5px 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 20px;
+
+  img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .name {
+    margin-left: 10px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+  }
+}

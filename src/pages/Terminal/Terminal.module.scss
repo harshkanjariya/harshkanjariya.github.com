@@ -1,0 +1,38 @@
+.terminal {
+  overflow: auto;
+}
+
+.prompt {
+  display: inline-block;
+}
+
+.promptRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.stdin {
+  flex: 1;
+  border: 0;
+  font-size: 16px;
+  color: var(--font-color);
+  background-color: var(--background-color);
+}
+
+.stdin:focus {
+  outline: none;
+}
+
+.terminalBody {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+
+.link {
+}

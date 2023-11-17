@@ -1,0 +1,42 @@
+.envSelect {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.envList {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.env {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px 15px 15px;
+  transition: .5s;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  background-color: var(--background-secondary-color);
+}
+
+.env img {
+  width: 70px;
+  height: 70px;
+}
+
+.env:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+[data-theme="dark"] {
+  .env {
+    border: 1px solid #555;
+  }
+
+  .env:hover {
+    box-shadow: rgba(255, 255, 255, 0.76) 0px 0px 8px;
+  }
+}

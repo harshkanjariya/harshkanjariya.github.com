@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "https://harshkanjariya.tech/static/css/main.f21eadff.css",
-    "main.js": "https://harshkanjariya.tech/static/js/main.a0e6873c.js",
-    "static/js/853.3f02d877.chunk.js": "https://harshkanjariya.tech/static/js/853.3f02d877.chunk.js",
-    "static/media/motherboard.png": "https://harshkanjariya.tech/static/media/motherboard.f6edbcea3720a82f43a6.png",
-    "static/media/windows-background.jpeg": "https://harshkanjariya.tech/static/media/windows-background.088719fe83cebf2fb259.jpeg",
-    "index.html": "https://harshkanjariya.tech/index.html",
-    "main.f21eadff.css.map": "https://harshkanjariya.tech/static/css/main.f21eadff.css.map",
-    "main.a0e6873c.js.map": "https://harshkanjariya.tech/static/js/main.a0e6873c.js.map",
-    "853.3f02d877.chunk.js.map": "https://harshkanjariya.tech/static/js/853.3f02d877.chunk.js.map"
+    "main.css": "https://harshkanjariya.github.io/static/css/main.f0991779.css",
+    "main.js": "https://harshkanjariya.github.io/static/js/main.7cb44fb3.js",
+    "static/js/853.3f02d877.chunk.js": "https://harshkanjariya.github.io/static/js/853.3f02d877.chunk.js",
+    "static/media/motherboard.png": "https://harshkanjariya.github.io/static/media/motherboard.f6edbcea3720a82f43a6.png",
+    "static/media/windows-background.jpeg": "https://harshkanjariya.github.io/static/media/windows-background.088719fe83cebf2fb259.jpeg",
+    "index.html": "https://harshkanjariya.github.io/index.html",
+    "main.f0991779.css.map": "https://harshkanjariya.github.io/static/css/main.f0991779.css.map",
+    "main.7cb44fb3.js.map": "https://harshkanjariya.github.io/static/js/main.7cb44fb3.js.map",
+    "853.3f02d877.chunk.js.map": "https://harshkanjariya.github.io/static/js/853.3f02d877.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f21eadff.css",
-    "static/js/main.a0e6873c.js"
+    "static/css/main.f0991779.css",
+    "static/js/main.7cb44fb3.js"
   ]
 }

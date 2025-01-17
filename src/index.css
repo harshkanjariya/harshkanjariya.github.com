@@ -2,6 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+  overflow: hidden;
+}
+
+html, body, #root {
+  @apply h-screen;
+  @apply w-screen;
+}
+
+#root {
+  overflow: auto;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

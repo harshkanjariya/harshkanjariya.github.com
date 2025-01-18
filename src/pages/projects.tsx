@@ -48,7 +48,7 @@ export function Projects() {
     {
       name: "Photography Website",
       description: "A website for photographers and photo studios.",
-      url: "Link to be added after deployment",
+      url: "https://harshkanjariya.xyz/photoview",
       github: "https://github.com/harshkanjariya/photoview",
       logo: "/logo/photographer.png"
     },

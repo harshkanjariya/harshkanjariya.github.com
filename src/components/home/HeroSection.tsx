@@ -12,7 +12,7 @@ export const HeroSection = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen flex flex-col items-center justify-center text-white bg-blue-600">
+    <div className="relative w-full h-screen flex flex-col items-center justify-center text-white bg-blue-600 z-0">
       <div id="particles-js" className="absolute top-0 left-0 w-full h-full"></div>
 
       <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center text-center z-10">

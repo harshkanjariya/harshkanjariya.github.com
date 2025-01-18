@@ -23,7 +23,7 @@ export const HeroSection = () => {
           <button onClick={() => navigate("/projects")} className="px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md">
             View Projects
           </button>
-          <button className="px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white font-medium rounded-md">
+          <button onClick={() => navigate("/contact-me")} className="px-6 py-3 bg-gray-700 hover:bg-gray-800 text-white font-medium rounded-md">
             Contact
           </button>
         </div>

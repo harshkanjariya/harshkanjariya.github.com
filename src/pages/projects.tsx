@@ -90,19 +90,24 @@ export function Projects() {
   ];
 
   return (
-    <div className="projects-page w-full relative min-h-[80vh] pb-16">
-      <header className="text-center pt-8 pb-10 px-4">
-        <h1 className="text-4xl md:text-5xl font-bold text-slate-800 tracking-tight">
-          Projects
-        </h1>
-        <p className="text-slate-600 mt-2 text-lg max-w-xl mx-auto">
-          Things I’ve built and shipped.
-        </p>
-      </header>
-      <div className="projects-grid">
-        {projects.map((project, index) => (
-          <ProjectCard key={index} project={project} />
-        ))}
+    <div className="min-h-screen bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50 py-8 sm:py-12 px-4 sm:px-6">
+      <div className="max-w-7xl mx-auto">
+        {/* Header Section */}
+        <div className="text-center mb-10 sm:mb-12 md:mb-16">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-4">
+            My Projects
+          </h1>
+          <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
+            A collection of things I've built and shipped. From web apps to IoT projects.
+          </p>
+        </div>
+
+        {/* Projects Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
+        </div>
       </div>
     </div>
   );

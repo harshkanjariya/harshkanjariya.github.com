@@ -86,7 +86,7 @@ export function Header() {
                   }`
                 }
               >
-                Timeline
+                Experience
                 {location.pathname === "/timeline" && (
                   <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></span>
                 )}
@@ -103,6 +103,21 @@ export function Header() {
               >
                 Projects
                 {location.pathname === "/projects" && (
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></span>
+                )}
+              </NavLink>
+              <NavLink
+                to="/skills"
+                className={({ isActive }) =>
+                  `relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                    isActive
+                      ? "text-blue-600 bg-blue-50"
+                      : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  }`
+                }
+              >
+                Skills
+                {location.pathname === "/skills" && (
                   <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></span>
                 )}
               </NavLink>
@@ -283,6 +298,32 @@ export function Header() {
               />
             </svg>
             Projects
+          </NavLink>
+          <NavLink
+            to="/skills"
+            onClick={closeDrawer}
+            className={({ isActive }) =>
+              `flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                isActive
+                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
+                  : "text-gray-700 hover:bg-gray-100"
+              }`
+            }
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+              />
+            </svg>
+            Skills
           </NavLink>
           <NavLink
             to="/contact-me"

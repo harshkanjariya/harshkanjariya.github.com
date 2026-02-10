@@ -1,5 +1,5 @@
 import { ProjectCard } from "../components/projects/ProjectCard.tsx";
-import {Project} from "../utils/types.ts";
+import { Project } from "../utils/types.ts";
 
 export function Projects() {
   const projects: Project[] = [
@@ -80,13 +80,30 @@ export function Projects() {
       github: "",
       logo: "/logo/code.jpg"
     },
+    {
+      name: "Shared Editor",
+      description: "Real-time text sharing without an account. Just sign in with Google to push and share.",
+      url: "https://shared-edit.web.app",
+      github: "",
+      logo: "/logo/code.jpg"
+    },
   ];
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-7 p-7 md:py-20 md:px-28">
-      {projects.map((project, index) => (
-        <ProjectCard project={project} key={index} />
-      ))}
+    <div className="projects-page w-full relative min-h-[80vh] pb-16">
+      <header className="text-center pt-8 pb-10 px-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-slate-800 tracking-tight">
+          Projects
+        </h1>
+        <p className="text-slate-600 mt-2 text-lg max-w-xl mx-auto">
+          Things I’ve built and shipped.
+        </p>
+      </header>
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <ProjectCard key={index} project={project} />
+        ))}
+      </div>
     </div>
   );
 }

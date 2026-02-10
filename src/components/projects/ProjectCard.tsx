@@ -4,31 +4,49 @@ interface ProjectCardProps {
   project: Project;
 }
 
-export function ProjectCard(props: ProjectCardProps) {
+export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <div className="flip-card w-full aspect-[9/12] perspective-[500px]">
-      <div className="content text-white w-full h-full transform-style-preserve-3d transition-transform duration-500 hover:rotate-y-180">
-        <div className="front text-xl bg-blue-600 flex flex-col justify-center items-center w-full h-full absolute top-0 left-0 backface-hidden">
-          {props.project.logo &&
-              <img src={props.project.logo}
-                  alt={`${props.project.name} logo`}
-                  className="w-1/2 rounded-lg mb-10" />}
-          {props.project.name}
+    <div className="project-card">
+      {project.logo ? (
+        <div className="flex justify-center mb-3">
+          <img
+            src={project.logo}
+            alt=""
+            className="w-14 h-14 object-contain rounded-xl bg-slate-100"
+          />
         </div>
-        <div
-          className="back bg-blue-900 p-4 flex flex-col gap-4 justify-center items-center w-full h-full absolute top-0 left-0 rotate-y-180 backface-hidden">
-          {props.project.description}
-          <div onClick={() => window.open(props.project.url, "project")}
-                  className="px-4 py-2 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md flex flex-row items-center gap-2">
-            <img src="/preview.png" alt="preview" width="30"/> Preview
-          </div>
-          {props.project.github &&
-          <button onClick={() => window.open(props.project.github, "github")}
-                  className="px-4 py-1 bg-blue-500 hover:bg-blue-600 text-white font-medium rounded-md flex flex-row items-center gap-2">
-              <img src="/github.png" alt="preview" width="25"/> Github
-          </button>
-          }
+      ) : (
+        <div className="w-14 h-14 mx-auto mb-3 rounded-xl bg-slate-200 flex items-center justify-center text-slate-500 text-xl font-semibold">
+          {project.name.charAt(0)}
         </div>
+      )}
+      <h3 className="font-semibold text-slate-800 text-lg text-center tracking-tight">
+        {project.name}
+      </h3>
+      <p className="text-slate-500 text-sm text-center mt-2 line-clamp-3 flex-1">
+        {project.description}
+      </p>
+      <div className="flex flex-wrap justify-center gap-2 mt-4">
+        <a
+          href={project.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-cyan-100 text-cyan-700 hover:bg-cyan-200 border border-cyan-200 text-sm font-medium transition-colors"
+        >
+          <svg className="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
+          Preview
+        </a>
+        {project.github ? (
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-200 text-slate-700 hover:bg-slate-300 border border-slate-300 text-sm font-medium transition-colors"
+          >
+            <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            GitHub
+          </a>
+        ) : null}
       </div>
     </div>
   );

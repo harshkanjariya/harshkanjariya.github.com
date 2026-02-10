@@ -34,30 +34,30 @@ export function Projects() {
     {
       name: "Maze Generator",
       description: "Generates unique mazes every time.",
-      url: "https://harshkanjariya.github.io/maze-generator",
+      url: "https://harshkanjariya.online/maze-generator",
       github: "https://github.com/harshkanjariya/maze-generator",
       logo: "/logo/maze.webp"
     },
     {
       name: "Firefighter Login",
       description: "A unique animated login page for firefighters.",
-      url: "https://harshkanjariya.github.io/fire-fighter-login/",
+      url: "https://harshkanjariya.online/fire-fighter-login/",
       github: "https://github.com/harshkanjariya/fire-fighter-login",
-      logo: "https://harshkanjariya.github.io/fire-fighter-login/logo-removebg-preview.png"
+      logo: "https://harshkanjariya.online/fire-fighter-login/logo-removebg-preview.png"
     },
     {
       name: "Photography Website",
       description: "A website for photographers and photo studios.",
-      url: "https://harshkanjariya.github.io/photography",
+      url: "https://harshkanjariya.online/photography",
       github: "https://github.com/harshkanjariya/photography",
       logo: "/logo/photographer.png"
     },
     {
       name: "Browser Computer",
       description: "In browser computer with basic functionalities.",
-      url: "https://harshkanjariya.github.io/computer",
+      url: "https://harshkanjariya.online/computer",
       github: "https://github.com/harshkanjariya/computer",
-      logo: "https://harshkanjariya.github.io/computer/icons/this-pc.png"
+      logo: "https://harshkanjariya.online/computer/icons/this-pc.png"
     },
   ];
 

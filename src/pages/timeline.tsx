@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 
 interface TimelineEvent {
   year: string;
@@ -13,6 +13,16 @@ interface TimelineEvent {
 const events: TimelineEvent[] = [
   {
     year: "2019",
+    category: "IoT / Hardware",
+    title: "Gujcost Robofest Rover",
+    description: [
+      "Raspberry Pi development",
+      "Android app control via Firebase"
+    ],
+    skills: ["Raspberry Pi", "Firebase", "Android", "IoT"]
+  },
+  {
+    year: "2020",
     category: "Full-Stack Web Development",
     title: "Way2Advertize",
     description: [
@@ -23,7 +33,7 @@ const events: TimelineEvent[] = [
     link: "https://way2advertize.com"
   },
   {
-    year: "2020",
+    year: "2021",
     category: "Backend Engineering",
     title: "2LC Technologies - Startup",
     description: [
@@ -32,39 +42,9 @@ const events: TimelineEvent[] = [
     skills: ["Node.js", "Startup"]
   },
   {
-    year: "2021",
-    category: "Education",
-    title: "Completed B.Tech",
-    description: [
-      "Graduated from Indus University"
-    ]
-  },
-  {
     year: "2022",
-    category: "Web3 / Blockchain",
-    title: "Boosters Edutech",
-    description: [
-      "Web3 IDO Launchpad",
-      "ethers.js smart contract interactions"
-    ],
-    skills: ["Ethereum", "ethers.js", "Wallet integrations", "Token launch platforms"]
-  },
-  {
-    year: "2022",
-    category: "Backend Engineering & AI",
-    title: "Physics Wallah",
-    description: [
-      "NestJS microservices (Sahayak)",
-      "Payment gateway & FinTech integrations (I2IFunding)",
-      "Android K8 kids theme",
-      "Micro-learning React frontend + NestJS APIs"
-    ],
-    skills: ["NestJS", "Microservices", "React.js", "Android", "Payment Integration"]
-  },
-  {
-    year: "2023",
     category: "Backend Engineering & Full-Stack",
-    title: "Emplitrack (Startup)",
+    title: "Emplitrack",
     description: [
       "Node.js backend architecture",
       "Auth, workflows, RBAC",
@@ -92,6 +72,29 @@ const events: TimelineEvent[] = [
   },
   {
     year: "2023",
+    category: "Web3 / Blockchain",
+    title: "Boosters Edutech",
+    description: [
+      "Web3 IDO Launchpad",
+      "ethers.js smart contract interactions"
+    ],
+    skills: ["Ethereum", "ethers.js", "Wallet integrations", "Token launch platforms"]
+  },
+  {
+    year: "2024",
+    category: "Backend Engineering & AI",
+    title: "Physics Wallah",
+    description: [
+      "NestJS microservices (Sahayak)",
+      "Payment gateway & FinTech integrations (I2IFunding)",
+      "Android K8 kids theme",
+      "Micro-learning React frontend + NestJS APIs"
+    ],
+    skills: ["NestJS", "Microservices", "React.js", "Android", "Payment Integration"],
+    link: "https://www.pw.live/"
+  },
+  {
+    year: "2024",
     category: "Backend Engineering",
     title: "Abnormal Security",
     description: [
@@ -101,17 +104,7 @@ const events: TimelineEvent[] = [
     skills: ["Go", "Django", "Email Systems"]
   },
   {
-    year: "2023",
-    category: "Game Development",
-    title: "Betting / Bidding Game",
-    description: [
-      "Unity (C#)",
-      "Node.js backend for real-time gameplay"
-    ],
-    skills: ["Unity", "C#", "Node.js", "Real-time Systems"]
-  },
-  {
-    year: "2024",
+    year: "2025",
     category: "AI / LLM Systems",
     title: "MSherpa",
     description: [
@@ -120,16 +113,6 @@ const events: TimelineEvent[] = [
       "Personal finance AI agent"
     ],
     skills: ["Node.js", "LangChain", "OpenAI APIs", "React.js", "AI Agents"]
-  },
-  {
-    year: "2024",
-    category: "IoT / Hardware",
-    title: "Gujcost Robofest Rover",
-    description: [
-      "Raspberry Pi development",
-      "Android app control via Firebase"
-    ],
-    skills: ["Raspberry Pi", "Firebase", "Android", "IoT"]
   }
 ];
 
@@ -147,9 +130,6 @@ const getCategoryColor = (category: string) => {
 };
 
 export function Timeline() {
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const timelineRef = useRef<HTMLDivElement>(null);
-  const lineRef = useRef<HTMLDivElement>(null);
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -159,66 +139,6 @@ export function Timeline() {
     window.addEventListener("resize", handleResize);
     handleResize();
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (timelineRef.current) {
-        const rect = timelineRef.current.getBoundingClientRect();
-        const windowHeight = window.innerHeight;
-        const scrollTop = window.scrollY;
-        
-        // Get the absolute position of the timeline element
-        const elementTop = scrollTop + rect.top;
-        const elementHeight = rect.height;
-        
-        // Calculate progress: 0 when timeline top enters viewport, 1 when bottom exits
-        let progress = 0;
-        
-        // Check if timeline is in viewport
-        if (rect.top < windowHeight && rect.bottom > 0) {
-          // Calculate how much of the timeline has been scrolled
-          // Start counting when top of timeline enters viewport
-          const startPoint = elementTop;
-          
-          // Current scroll position relative to timeline
-          const currentScroll = scrollTop + windowHeight;
-          
-          // Progress from 0 to 1 as we scroll from start to end
-          if (currentScroll >= startPoint) {
-            const scrolled = currentScroll - startPoint;
-            const totalDistance = elementHeight;
-            progress = Math.min(1, Math.max(0, scrolled / totalDistance));
-          }
-        } else if (rect.bottom <= 0) {
-          // Timeline is completely above viewport
-          progress = 1;
-        }
-        
-        setScrollProgress(progress);
-      }
-    };
-
-    // Throttle scroll events for better performance
-    let ticking = false;
-    const handleScrollThrottled = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          handleScroll();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener('scroll', handleScrollThrottled, { passive: true });
-    window.addEventListener('resize', handleScrollThrottled, { passive: true });
-    handleScroll(); // Initial call
-    
-    return () => {
-      window.removeEventListener('scroll', handleScrollThrottled);
-      window.removeEventListener('resize', handleScrollThrottled);
-    };
   }, []);
 
   return (
@@ -232,37 +152,14 @@ export function Timeline() {
           <p className="text-lg text-gray-600">
             Journey through projects, technologies, and achievements
           </p>
-          <p className="text-sm text-gray-500 mt-2">
-            Scroll to explore the timeline
-          </p>
         </div>
 
         {/* Timeline */}
-        <div ref={timelineRef} className="relative">
+        <div className="relative">
           {/* Vertical Line Container */}
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 transform md:-translate-x-1/2 z-0">
-            {/* Base Line (Full Height) */}
-            <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-gray-300 via-gray-200 to-gray-300 rounded-full"></div>
-            
-            {/* Animated Progress Line */}
-            <div
-              ref={lineRef}
-              className="absolute top-0 left-0 w-1 bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400 rounded-full"
-              style={{
-                height: `${scrollProgress * 100}%`,
-                boxShadow: '0 0 10px rgba(99, 102, 241, 0.5)',
-                transition: 'height 0.1s ease-out'
-              }}
-            >
-              {/* Progress Indicator Dot */}
-              <div
-                className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-indigo-500 rounded-full border-4 border-white shadow-lg"
-                style={{
-                  transform: 'translate(-50%, 50%)',
-                  boxShadow: '0 0 15px rgba(99, 102, 241, 0.8)'
-                }}
-              ></div>
-            </div>
+            {/* Timeline Line */}
+            <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-400 via-purple-400 to-pink-400 rounded-full"></div>
           </div>
 
           {/* Events */}
@@ -270,7 +167,6 @@ export function Timeline() {
             {events.map((event, index) => {
               const isLeft = !isMobile && index % 2 === 0;
               const color = getCategoryColor(event.category);
-              const isVisible = scrollProgress >= index / events.length;
 
               return (
                 <div
@@ -280,21 +176,14 @@ export function Timeline() {
                   {/* Timeline Dot - Always centered */}
                   <div className="absolute left-4 md:left-1/2 transform -translate-x-1/2 z-10">
                     <div
-                      className={`w-4 h-4 md:w-5 md:h-5 rounded-full ${color.bg} border-4 border-white shadow-lg transition-all duration-300 ${
-                        isVisible ? 'scale-125' : 'scale-100'
-                      }`}
-                      style={{
-                        boxShadow: isVisible ? `0 0 20px rgba(99, 102, 241, 0.6)` : 'none'
-                      }}
+                      className={`w-4 h-4 md:w-5 md:h-5 rounded-full ${color.bg} border-4 border-white shadow-lg`}
                     ></div>
                   </div>
 
                   {/* Left Side Card (Even indices on desktop) */}
                   {isLeft ? (
-                    <div className="w-full md:w-5/12 md:pr-12 ml-12 md:ml-0 transition-all duration-500">
-                      <div className={`bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-all duration-300 border-l-4 ${color.border} transform hover:scale-105 ${
-                        isVisible ? 'opacity-100 translate-x-0' : 'opacity-50 -translate-x-4'
-                      }`}>
+                    <div className="w-full md:w-5/12 md:pr-12 ml-12 md:ml-0">
+                      <div className={`bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-all duration-300 border-l-4 ${color.border} transform hover:scale-105`}>
                         {/* Year Badge */}
                         <div className="flex items-center justify-between mb-4 md:flex-row-reverse">
                           <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold text-white ${color.bg}`}>
@@ -352,10 +241,8 @@ export function Timeline() {
                     </div>
                   ) : (
                     /* Right Side Card (Odd indices on desktop) */
-                    <div className="w-full md:w-5/12 md:ml-auto md:pl-12 ml-12 md:ml-auto transition-all duration-500">
-                      <div className={`bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-all duration-300 border-l-4 ${color.border} transform hover:scale-105 ${
-                        isVisible ? 'opacity-100 translate-x-0' : 'opacity-50 translate-x-4'
-                      }`}>
+                    <div className="w-full md:w-5/12 md:ml-auto md:pl-12 ml-12 md:ml-auto">
+                      <div className={`bg-white rounded-xl shadow-lg p-6 md:p-8 hover:shadow-xl transition-all duration-300 border-l-4 ${color.border} transform hover:scale-105`}>
                         {/* Year Badge */}
                         <div className="flex items-center justify-between mb-4">
                           <span className={`inline-block px-3 py-1 rounded-full text-xs font-semibold text-white ${color.bg}`}>

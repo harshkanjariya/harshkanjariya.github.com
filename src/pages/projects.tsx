@@ -59,6 +59,27 @@ export function Projects() {
       github: "https://github.com/harshkanjariya/computer",
       logo: "https://harshkanjariya.online/computer/icons/this-pc.png"
     },
+    {
+      name: "Way2 Advertize",
+      description: "My first freelancing project - Website for Amazon Authorized Training Partner company.",
+      url: "https://www.way2advertize.com/",
+      github: "",
+      logo: "/logo/code.jpg"
+    },
+    {
+      name: "Robofest 2020",
+      description: "IoT Robotics Project - Multi-Purpose Defence Rover. Won ₹2,50,000 (Stage 2 Winner).",
+      url: "https://indusuni.ac.in/robofest-2020/",
+      github: "",
+      logo: "/logo/code.jpg"
+    },
+    {
+      name: "MSherpa",
+      description: "Personalized All-in-One Finance Agent for financial management.",
+      url: "https://msherpa-dev.web.app/",
+      github: "",
+      logo: "/logo/code.jpg"
+    },
   ];
 
   return (

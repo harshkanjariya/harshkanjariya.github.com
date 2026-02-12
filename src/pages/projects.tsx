@@ -32,13 +32,6 @@ export function Projects() {
       logo: "/logo/code.jpg"
     },
     {
-      name: "Maze Generator",
-      description: "Generates unique mazes every time.",
-      url: "https://harshkanjariya.online/maze-generator",
-      github: "https://github.com/harshkanjariya/maze-generator",
-      logo: "/logo/maze.webp"
-    },
-    {
       name: "Firefighter Login",
       description: "A unique animated login page for firefighters.",
       url: "https://harshkanjariya.online/fire-fighter-login/",
@@ -64,7 +57,7 @@ export function Projects() {
       description: "My first freelancing project - Website for Amazon Authorized Training Partner company.",
       url: "https://www.way2advertize.com/",
       github: "",
-      logo: "/logo/code.jpg"
+      logo: "https://www.way2advertize.com/assets/icon/favicon.png"
     },
     {
       name: "Robofest 2020",
@@ -86,6 +79,27 @@ export function Projects() {
       url: "https://shared-edit.web.app",
       github: "",
       logo: "/logo/code.jpg"
+    },
+    {
+      name: "Chronos",
+      description: "Meta cronjob system for personal projects. Uses Google Cloud Scheduler + Firestore to run unlimited cron jobs via a single scheduler trigger.",
+      url: "https://chronos-cron.web.app/",
+      github: "",
+      logo: "https://chronos-cron.web.app/logo.svg"
+    },
+    {
+      name: "Nomisma Hub",
+      description: "Open finance data visibility app for FX, stocks (BSE/NSE), metals, and crypto using free public APIs (with fallback). Also exposes APIs for non-time-critical integrations.",
+      url: "https://nomisma-hub.web.app/",
+      github: "",
+      logo: "https://nomisma-hub.web.app/logo.svg"
+    },
+    {
+      name: "Maze Generator",
+      description: "Generates unique mazes every time.",
+      url: "https://harshkanjariya.online/maze-generator",
+      github: "https://github.com/harshkanjariya/maze-generator",
+      logo: "/logo/maze.webp"
     },
   ];
 

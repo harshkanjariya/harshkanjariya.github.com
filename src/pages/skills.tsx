@@ -302,6 +302,9 @@ export function Skills() {
                     <p className="text-lg sm:text-xl opacity-90">
                       {selectedCategory.subtitle}
                     </p>
+                    {selectedCategory.id == 4 && (
+                        <a href="/ai-work" className="text-white hover:text-amber-100">Show more</a>
+                    )}
                     {selectedCategory.pitch && (
                       <div className="mt-4 p-4 bg-white/20 backdrop-blur-sm rounded-lg border border-white/30">
                         <p className="text-base sm:text-lg italic">

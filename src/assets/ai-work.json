@@ -1,0 +1,103 @@
+[
+  {
+    "id": "orion",
+    "title": "Orion – Intelligent Personal AI Operating System",
+    "tagline": "A portfolio-integrated AI assistant with persistent memory, automation workflows, and executive intelligence capabilities.",
+    "category": "AI Assistant",
+    "overview": "Orion is an advanced AI-powered personal operating system embedded directly into my portfolio. It transforms a static portfolio into an intelligent, interactive interface capable of engaging visitors, answering contextual questions about my expertise, and automating real-world actions such as meeting scheduling.",
+    "problemStatement": "Traditional portfolios are static and cannot dynamically represent skills, availability, or context-aware insights. Recruiters and clients often need to manually navigate, email, or schedule calls through multiple steps.",
+    "solution": "Orion provides conversational intelligence, real-time scheduling automation, contextual skill explanations, and executive-level insights via an admin intelligence layer.",
+    "keyCapabilities": [
+      "Conversational AI that explains skills, experience, and project depth dynamically",
+      "Authentication-based meeting scheduling with automatic Google Meet generation",
+      "Calendar synchronization and automated email invitations",
+      "Admin Orion for analytics, visitor insights, and engagement summaries",
+      "Connected email intelligence: summarize inbox, extract financial insights, search contextually",
+      "Graph-based memory architecture for long-term contextual awareness"
+    ],
+    "technicalHighlights": [
+      "Graph database powered memory retrieval instead of fixed message history",
+      "Context selection engine to reduce token usage while increasing relevance",
+      "Role-based access layer (Public vs Admin Orion)",
+      "Secure OAuth-based authentication flow",
+      "LLM orchestration with contextual memory injection"
+    ],
+    "impact": "Orion acts as a 24/7 AI representative, automating professional communication while maintaining personalization and context awareness."
+  },
+  {
+    "id": "altora",
+    "title": "Altora – AI-Powered Digital Persona Network",
+    "tagline": "A new category of AI-driven Q&A social platform built around expert digital personalities.",
+    "category": "Digital Persona Platform",
+    "icon": "Users",
+    "overview": "Altora (derived from 'Alternate Aura') is a platform that enables domain experts, entrepreneurs, and industry leaders to build AI-powered digital personas. These personas continuously learn from structured domain-specific questioning and evolve to represent the expert’s thinking style and expertise.",
+    "problemStatement": "Access to industry leaders and domain experts is limited. Most professionals cannot directly interact with top experts for guidance or insights.",
+    "solution": "Altora creates continuously trained digital personas that simulate expert-level reasoning within defined domains, allowing global access to high-level thinking.",
+    "keyCapabilities": [
+      "Expert onboarding and persona creation",
+      "Structured domain training through guided AI interviews",
+      "Personality modeling aligned with communication style",
+      "AI-powered Q&A social feed",
+      "Follow-based interaction model similar to social networks",
+      "Continuous refinement through feedback loops"
+    ],
+    "technicalHighlights": [
+      "Domain-scoped knowledge boundaries",
+      "Hybrid memory architecture for persona evolution",
+      "Prompt engineering aligned to personality tone",
+      "Scalable LLM inference pipelines",
+      "Persona reinforcement through iterative questioning"
+    ],
+    "impact": "Altora introduces a new paradigm where AI becomes a scalable extension of expert knowledge, enabling democratized access to domain intelligence worldwide."
+  },
+  {
+    "id": "msherpa",
+    "title": "Msherpa (Money Sherpa) – AI Financial Agent",
+    "tagline": "A personalized AI financial advisory assistant built for U.S. citizens.",
+    "category": "Finance AI",
+    "icon": "TrendingUp",
+    "overview": "Msherpa is a comprehensive AI-powered financial assistant designed to simplify personal finance decisions. It aggregates financial insights, analyzes user profiles, and provides actionable recommendations tailored to U.S. users.",
+    "problemStatement": "Financial products such as credit cards, mortgages, and loans are complex and difficult to compare. Users often lack personalized guidance.",
+    "solution": "Msherpa acts as an AI financial guide that analyzes user data and recommends optimal financial products and decisions.",
+    "keyCapabilities": [
+      "Personalized credit card recommendations",
+      "Mortgage rate discovery and comparison",
+      "Credit score analysis and interpretation",
+      "Financial email summarization",
+      "Personalized financial health insights"
+    ],
+    "technicalHighlights": [
+      "Profile-based financial matching algorithms",
+      "Structured financial data extraction",
+      "Secure data handling architecture",
+      "Contextual financial reasoning with LLMs",
+      "Rule-based + AI hybrid recommendation engine"
+    ],
+    "impact": "Msherpa simplifies financial decision-making by acting as an intelligent financial navigator for users."
+  },
+  {
+    "id": "pw-sahayak",
+    "title": "PhysicsWallah Sahayak AI – Personalized Learning Assistant",
+    "tagline": "AI-driven educational intelligence with adaptive learning paths.",
+    "category": "Education AI",
+    "icon": "GraduationCap",
+    "overview": "PhysicsWallah Sahayak AI is an AI-powered educational assistant built to support large-scale digital learning environments. It generates study material, answers academic queries, and creates personalized learning paths for students.",
+    "problemStatement": "Students have different learning speeds and styles, yet traditional online learning systems are static and non-adaptive.",
+    "solution": "Sahayak AI dynamically generates customized study content and structured learning paths based on student progress and interaction patterns.",
+    "keyCapabilities": [
+      "Conversational academic doubt solving",
+      "AI-generated study material",
+      "Dynamic learning path generation",
+      "Adaptive recommendation engine",
+      "Scalable student personalization"
+    ],
+    "technicalHighlights": [
+      "Built using LangChain orchestration",
+      "Context-aware academic response generation",
+      "Learning progression modeling",
+      "Modular LLM tool integration",
+      "Scalable multi-user AI architecture"
+    ],
+    "impact": "Sahayak AI enables personalized education at scale, bridging the gap between one-to-one tutoring and mass digital learning."
+  }
+]

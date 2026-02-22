@@ -5,6 +5,7 @@ import { Timeline } from "../pages/timeline.tsx";
 import { Projects } from "../pages/projects.tsx";
 import { ContactMe } from "../pages/contact-me.tsx";
 import { Skills } from "../pages/skills.tsx";
+import {AiWorkPage} from "../pages/ai-work.tsx";
 
 export const routes = createBrowserRouter([
   {
@@ -16,6 +17,7 @@ export const routes = createBrowserRouter([
       { path: "/projects", element: <Projects /> },
       { path: "/skills", element: <Skills /> },
       { path: "/contact-me", element: <ContactMe /> },
+      { path: "/ai-work", element: <AiWorkPage /> },
     ],
   },
 ]);

@@ -6,11 +6,13 @@
     "url": "https://www.emplitrack.com",
     "github": "",
     "logo": "/logo/emplitrack.webp",
-    "tags": [],
-    "techStack": [],
-    "year": "",
+    "tags": ["SaaS", "HR Tech"],
+    "techStack": ["React.js", "Node.js", "AWS", "Terraform", "CI/CD"],
+    "year": "2023",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [7, 8, 3],
+    "skillNote": "Node.js backend architecture, Auth, workflows, RBAC, AWS infra + Terraform, CI/CD pipelines"
   },
   {
     "name": "MSK Markdown Editor",
@@ -19,11 +21,13 @@
     "url": "https://msk-markdown.netlify.app",
     "github": "https://github.com/msk-apps/msk-markdown",
     "logo": "/logo/msk-markdown.png",
-    "tags": [],
-    "techStack": [],
+    "tags": ["Tool", "Open Source"],
+    "techStack": ["React.js"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [8],
+    "skillNote": "React.js frontend, markdown parsing and live preview"
   },
   {
     "name": "BhaiLang",
@@ -32,11 +36,13 @@
     "url": "https://bhailang.js.org/",
     "github": "https://github.com/DulLabs/bhai-lang",
     "logo": "/logo/bhailang.png",
-    "tags": [],
-    "techStack": [],
+    "tags": ["Open Source", "Language"],
+    "techStack": ["Node.js", "JavaScript"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [7],
+    "skillNote": "Language interpreter built in Node.js, open source contribution"
   },
   {
     "name": "Mock-n-Serve",
@@ -45,11 +51,13 @@
     "url": "https://mock-n-serve.onrender.com/",
     "github": "https://github.com/harshkanjariya/mock-n-serve",
     "logo": "/logo/code.jpg",
-    "tags": [],
-    "techStack": [],
+    "tags": ["Dev Tool", "Backend"],
+    "techStack": ["Node.js"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [7],
+    "skillNote": "Mock server for CORS and API testing, Node.js backend"
   },
   {
     "name": "Firefighter Login",
@@ -58,11 +66,13 @@
     "url": "https://harshkanjariya.online/fire-fighter-login/",
     "github": "https://github.com/harshkanjariya/fire-fighter-login",
     "logo": "https://harshkanjariya.online/fire-fighter-login/logo-removebg-preview.png",
-    "tags": [],
-    "techStack": [],
+    "tags": ["UI", "Animation"],
+    "techStack": ["HTML", "CSS", "JavaScript"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [8],
+    "skillNote": "Creative animated UI, CSS animations and transitions"
   },
   {
     "name": "Photography Website",
@@ -71,11 +81,13 @@
     "url": "https://harshkanjariya.online/photography",
     "github": "https://github.com/harshkanjariya/photography",
     "logo": "/logo/photographer.png",
-    "tags": [],
-    "techStack": [],
+    "tags": ["Freelance", "UI"],
+    "techStack": ["HTML", "CSS", "JavaScript"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [8],
+    "skillNote": "Photography studio website with gallery and contact form"
   },
   {
     "name": "Browser Computer",
@@ -84,11 +96,13 @@
     "url": "https://harshkanjariya.online/computer",
     "github": "https://github.com/harshkanjariya/computer",
     "logo": "https://harshkanjariya.online/computer/icons/this-pc.png",
-    "tags": [],
-    "techStack": [],
+    "tags": ["UI", "Experiment"],
+    "techStack": ["React.js", "JavaScript"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [8],
+    "skillNote": "In-browser OS simulation with React.js, file system and window management"
   },
   {
     "name": "Way2 Advertize",
@@ -97,11 +111,13 @@
     "url": "https://www.way2advertize.com/",
     "github": "",
     "logo": "https://www.way2advertize.com/assets/icon/favicon.png",
-    "tags": [],
-    "techStack": [],
+    "tags": ["Freelance"],
+    "techStack": ["HTML", "CSS", "PHP"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [8],
+    "skillNote": "HTML/CSS frontend, PHP backend for contact & enquiry system"
   },
   {
     "name": "Robofest 2020",
@@ -110,11 +126,59 @@
     "url": "https://indusuni.ac.in/robofest-2020/",
     "github": "",
     "logo": "/logo/code.jpg",
-    "tags": [],
-    "techStack": [],
+    "tags": ["IoT", "Robotics", "Award"],
+    "techStack": ["Raspberry Pi", "Python", "Firebase", "Android"],
     "year": "2020",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [5, 6],
+    "skillNote": "Raspberry Pi rover, Android app control via Firebase real-time database"
+  },
+  {
+    "name": "Orion",
+    "slug": "orion",
+    "description": "A portfolio-integrated AI assistant with persistent memory, automation workflows, and executive intelligence capabilities.",
+    "url": "",
+    "github": "",
+    "logo": "/logo/code.jpg",
+    "tags": ["AI Assistant", "LLM", "Automation"],
+    "techStack": ["LangChain", "OpenAI", "Graph Database", "OAuth", "Node.js"],
+    "year": "",
+    "screenshots": [],
+    "features": [
+      "Conversational AI that explains skills, experience, and project depth dynamically",
+      "Authentication-based meeting scheduling with automatic Google Meet generation",
+      "Calendar synchronization and automated email invitations",
+      "Admin Orion for analytics, visitor insights, and engagement summaries",
+      "Connected email intelligence: summarize inbox, extract financial insights, search contextually",
+      "Graph-based memory architecture for long-term contextual awareness"
+    ],
+    "longDescription": "## Overview\nOrion is an advanced AI-powered personal operating system embedded directly into my portfolio. It transforms a static portfolio into an intelligent, interactive interface capable of engaging visitors, answering contextual questions about my expertise, and automating real-world actions such as meeting scheduling.\n\n---\n\n## Problem\nTraditional portfolios are static and cannot dynamically represent skills, availability, or context-aware insights. Recruiters and clients often need to manually navigate, email, or schedule calls through multiple steps.\n\n---\n\n## Solution\nOrion provides conversational intelligence, real-time scheduling automation, contextual skill explanations, and executive-level insights via an admin intelligence layer.\n\n---\n\n## Technical Highlights\n- Graph database powered memory retrieval instead of fixed message history\n- Context selection engine to reduce token usage while increasing relevance\n- Role-based access layer (Public vs Admin Orion)\n- Secure OAuth-based authentication flow\n- LLM orchestration with contextual memory injection\n\n---\n\n## Impact\nOrion acts as a 24/7 AI representative, automating professional communication while maintaining personalization and context awareness.",
+    "skillCategories": [1, 7],
+    "skillNote": "Intelligent AI operating system with graph memory, LLM orchestration, and scheduling automation"
+  },
+  {
+    "name": "Altora",
+    "slug": "altora",
+    "description": "A new category of AI-driven Q&A social platform built around expert digital personalities.",
+    "url": "",
+    "github": "",
+    "logo": "/logo/code.jpg",
+    "tags": ["AI", "Social Platform", "Digital Persona", "LLM"],
+    "techStack": ["LangChain", "OpenAI", "Node.js", "React.js"],
+    "year": "",
+    "screenshots": [],
+    "features": [
+      "Expert onboarding and persona creation",
+      "Structured domain training through guided AI interviews",
+      "Personality modeling aligned with communication style",
+      "AI-powered Q&A social feed",
+      "Follow-based interaction model similar to social networks",
+      "Continuous refinement through feedback loops"
+    ],
+    "longDescription": "## Overview\nAltora (derived from 'Alternate Aura') is a platform that enables domain experts, entrepreneurs, and industry leaders to build AI-powered digital personas. These personas continuously learn from structured domain-specific questioning and evolve to represent the expert's thinking style and expertise.\n\n---\n\n## Problem\nAccess to industry leaders and domain experts is limited. Most professionals cannot directly interact with top experts for guidance or insights.\n\n---\n\n## Solution\nAltora creates continuously trained digital personas that simulate expert-level reasoning within defined domains, allowing global access to high-level thinking.\n\n---\n\n## Technical Highlights\n- Domain-scoped knowledge boundaries\n- Hybrid memory architecture for persona evolution\n- Prompt engineering aligned to personality tone\n- Scalable LLM inference pipelines\n- Persona reinforcement through iterative questioning\n\n---\n\n## Impact\nAltora introduces a new paradigm where AI becomes a scalable extension of expert knowledge, enabling democratized access to domain intelligence worldwide.",
+    "skillCategories": [1, 7, 8],
+    "skillNote": "AI digital persona platform with domain-scoped LLM training, hybrid memory, and social Q&A feed"
   },
   {
     "name": "MSherpa",
@@ -123,11 +187,42 @@
     "url": "https://msherpa-dev.web.app/",
     "github": "",
     "logo": "/logo/code.jpg",
-    "tags": [],
-    "techStack": [],
+    "tags": ["AI", "FinTech", "Finance AI"],
+    "techStack": ["Node.js", "LangChain", "OpenAI", "React.js"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "features": [
+      "Personalized credit card recommendations",
+      "Mortgage rate discovery and comparison",
+      "Credit score analysis and interpretation",
+      "Financial email summarization",
+      "Personalized financial health insights"
+    ],
+    "longDescription": "## Overview\nMsherpa is a comprehensive AI-powered financial assistant designed to simplify personal finance decisions. It aggregates financial insights, analyzes user profiles, and provides actionable recommendations tailored to U.S. users.\n\n---\n\n## Problem\nFinancial products such as credit cards, mortgages, and loans are complex and difficult to compare. Users often lack personalized guidance.\n\n---\n\n## Solution\nMsherpa acts as an AI financial guide that analyzes user data and recommends optimal financial products and decisions.\n\n---\n\n## Technical Highlights\n- Profile-based financial matching algorithms\n- Structured financial data extraction\n- Secure data handling architecture\n- Contextual financial reasoning with LLMs\n- Rule-based + AI hybrid recommendation engine\n\n---\n\n## Impact\nMsherpa simplifies financial decision-making by acting as an intelligent financial navigator for users.",
+    "skillCategories": [1, 7, 8],
+    "skillNote": "AI agent backend (Node.js + LangChain), React frontend, personal finance automation"
+  },
+  {
+    "name": "PW Sahayak AI",
+    "slug": "pw-sahayak-ai",
+    "description": "AI-driven educational intelligence with adaptive learning paths, built for PhysicsWallah's large-scale digital learning environment.",
+    "url": "",
+    "github": "",
+    "logo": "/logo/code.jpg",
+    "tags": ["Education AI", "LLM", "EdTech", "Adaptive Learning"],
+    "techStack": ["LangChain", "OpenAI", "NestJS", "Node.js"],
+    "year": "",
+    "screenshots": [],
+    "features": [
+      "Conversational academic doubt solving",
+      "AI-generated study material",
+      "Dynamic learning path generation",
+      "Adaptive recommendation engine",
+      "Scalable student personalization"
+    ],
+    "longDescription": "## Overview\nPhysicsWallah Sahayak AI is an AI-powered educational assistant built to support large-scale digital learning environments. It generates study material, answers academic queries, and creates personalized learning paths for students.\n\n---\n\n## Problem\nStudents have different learning speeds and styles, yet traditional online learning systems are static and non-adaptive.\n\n---\n\n## Solution\nSahayak AI dynamically generates customized study content and structured learning paths based on student progress and interaction patterns.\n\n---\n\n## Technical Highlights\n- Built using LangChain orchestration\n- Context-aware academic response generation\n- Learning progression modeling\n- Modular LLM tool integration\n- Scalable multi-user AI architecture\n\n---\n\n## Impact\nSahayak AI enables personalized education at scale, bridging the gap between one-to-one tutoring and mass digital learning.",
+    "skillCategories": [1, 7],
+    "skillNote": "LangChain-powered educational AI assistant, adaptive learning paths, scalable multi-user LLM architecture"
   },
   {
     "name": "Shared Editor",
@@ -136,11 +231,13 @@
     "url": "https://shared-edit.web.app",
     "github": "",
     "logo": "/logo/code.jpg",
-    "tags": [],
-    "techStack": [],
+    "tags": ["Real-time", "Tool"],
+    "techStack": ["React.js", "Firebase"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [8],
+    "skillNote": "Real-time collaborative editor with Firebase and Google Auth"
   },
   {
     "name": "Chronos",
@@ -149,11 +246,13 @@
     "url": "https://chronos-cron.web.app/",
     "github": "",
     "logo": "https://chronos-cron.web.app/logo.svg",
-    "tags": [],
-    "techStack": [],
+    "tags": ["DevOps", "Backend"],
+    "techStack": ["Node.js", "Firestore", "Google Cloud Scheduler"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [7, 3],
+    "skillNote": "Meta cron system using Google Cloud Scheduler + Firestore, unlimited job scheduling"
   },
   {
     "name": "Nomisma Hub",
@@ -162,11 +261,13 @@
     "url": "https://nomisma-hub.web.app/",
     "github": "",
     "logo": "https://nomisma-hub.web.app/logo.svg",
-    "tags": [],
-    "techStack": [],
+    "tags": ["FinTech", "Data"],
+    "techStack": ["React.js", "Node.js", "Firebase"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [7, 8],
+    "skillNote": "Finance data aggregation API + React dashboard, multi-source fallback architecture"
   },
   {
     "name": "Nugget-O-Verse",
@@ -199,7 +300,9 @@
       "Experience Builder (Learning Flow Engine)",
       "Admin Controlled Question Management System"
     ],
-    "longDescription": "# Nugget-O-Verse\n\n## 🚀 Overview\nNugget-O-Verse is a pedagogy-driven learning engine designed to transform static educational content into structured, interactive, self-paced learning experiences.\n\nInstead of treating education as a digital library of videos and PDFs, Nugget-O-Verse breaks content into atomic learning units called **Nuggets**, which can be dynamically assembled into meaningful learning flows called **Experiences**.\n\n---\n\n## 🧩 What is a Nugget?\nA Nugget is the smallest consumable unit of learning content. It can be:\n\n- Note\n- Image\n- Video\n- Audio\n- Single Choice Question (SCC)\n- Multiple Choice Question (MCC)\n- Fill in the Blanks (FIB)\n- Label the Image (LTI)\n- Subjective Question\n- True/False\n- Match the Column\n- Table Nugget\n- Scratch the Image\n\nEach Nugget is:\n- Tagged by category, subject, chapter, topic\n- Configurable with XP rewards\n- Configurable with Timers (multiples of 15 seconds)\n\n---\n\n## 🎯 Experience Engine\nAn **Experience** is a curated sequence of Nuggets designed to serve a learning objective.\n\nExamples:\n- Test Series (collection of question nuggets)\n- Video Series\n- Pedagogical Blend (video + note + question)\n- Notes File (note + image nuggets)\n\nThis allows modular learning flow construction instead of static content consumption.\n\n---\n\n## 🏆 Gamification Layer\n- XP points awarded for correct answers\n- Timer-based reward scaling\n- Structured engagement loops\n\nXP values are configurable in multiples of 15.\n\n---\n\n## 🧠 Problem It Solves\nTraditional schooling suffers from:\n- One-size-fits-all pacing\n- Lack of personalization\n- Low engagement\n- Memorization-based learning\n\nMost EdTech apps act as digital libraries.\n\nNugget-O-Verse shifts the focus from content availability to **pedagogy-driven delivery**.\n\n> Content can be pirated. Pedagogy cannot.\n\n---\n\n## 🏗 System Design Contribution\n- Designed structured content schema for 13+ nugget types\n- Built scalable question management backend\n- Implemented XP and timer logic engine\n- Created tag-based taxonomy for content filtering\n- Enabled admin-based experience construction\n\n---\n\n## 💡 Impact\nThis system enables:\n- Self-paced learning\n- Structured engagement\n- Interactive retention-driven content delivery\n- Modular content scalability\n\nNugget-O-Verse lays the foundation for building pedagogy-first digital learning systems."
+    "longDescription": "# Nugget-O-Verse\n\n## 🚀 Overview\nNugget-O-Verse is a pedagogy-driven learning engine designed to transform static educational content into structured, interactive, self-paced learning experiences.\n\nInstead of treating education as a digital library of videos and PDFs, Nugget-O-Verse breaks content into atomic learning units called **Nuggets**, which can be dynamically assembled into meaningful learning flows called **Experiences**.\n\n---\n\n## 🧩 What is a Nugget?\nA Nugget is the smallest consumable unit of learning content. It can be:\n\n- Note\n- Image\n- Video\n- Audio\n- Single Choice Question (SCC)\n- Multiple Choice Question (MCC)\n- Fill in the Blanks (FIB)\n- Label the Image (LTI)\n- Subjective Question\n- True/False\n- Match the Column\n- Table Nugget\n- Scratch the Image\n\nEach Nugget is:\n- Tagged by category, subject, chapter, topic\n- Configurable with XP rewards\n- Configurable with Timers (multiples of 15 seconds)\n\n---\n\n## 🎯 Experience Engine\nAn **Experience** is a curated sequence of Nuggets designed to serve a learning objective.\n\nExamples:\n- Test Series (collection of question nuggets)\n- Video Series\n- Pedagogical Blend (video + note + question)\n- Notes File (note + image nuggets)\n\nThis allows modular learning flow construction instead of static content consumption.\n\n---\n\n## 🏆 Gamification Layer\n- XP points awarded for correct answers\n- Timer-based reward scaling\n- Structured engagement loops\n\nXP values are configurable in multiples of 15.\n\n---\n\n## 🧠 Problem It Solves\nTraditional schooling suffers from:\n- One-size-fits-all pacing\n- Lack of personalization\n- Low engagement\n- Memorization-based learning\n\nMost EdTech apps act as digital libraries.\n\nNugget-O-Verse shifts the focus from content availability to **pedagogy-driven delivery**.\n\n> Content can be pirated. Pedagogy cannot.\n\n---\n\n## 🏗 System Design Contribution\n- Designed structured content schema for 13+ nugget types\n- Built scalable question management backend\n- Implemented XP and timer logic engine\n- Created tag-based taxonomy for content filtering\n- Enabled admin-based experience construction\n\n---\n\n## 💡 Impact\nThis system enables:\n- Self-paced learning\n- Structured engagement\n- Interactive retention-driven content delivery\n- Modular content scalability\n\nNugget-O-Verse lays the foundation for building pedagogy-first digital learning systems.",
+    "skillCategories": [1, 7, 6],
+    "skillNote": "Pedagogy-driven content engine, question management backend, gamification logic, Android Jetpack Compose UI"
   },
   {
     "name": "Maze Generator",
@@ -208,10 +311,27 @@
     "url": "https://harshkanjariya.online/maze-generator",
     "github": "https://github.com/harshkanjariya/maze-generator",
     "logo": "/logo/maze.webp",
-    "tags": [],
-    "techStack": [],
+    "tags": ["Algorithm", "Fun"],
+    "techStack": ["JavaScript", "Canvas API"],
     "year": "",
     "screenshots": [],
-    "longDescription": ""
+    "longDescription": "",
+    "skillCategories": [8],
+    "skillNote": "Recursive maze generation algorithm with Canvas API rendering"
+  },
+  {
+    "name": "zkSpark IDO Launchpad",
+    "slug": "zkspark-ido-launchpad",
+    "description": "A Web3 IDO Launchpad built for Boosters Edutech, enabling token launches on Ethereum with smart contract interactions and wallet-based participation flows.",
+    "url": "",
+    "github": "",
+    "logo": "/logo/code.jpg",
+    "tags": ["Web3", "Blockchain", "DeFi", "Ethereum"],
+    "techStack": ["Ethereum", "ethers.js", "Solidity", "React.js", "MetaMask"],
+    "year": "2023",
+    "screenshots": [],
+    "longDescription": "## Overview\nzkSpark IDO Launchpad is a decentralized token launch platform built for Boosters Edutech, designed to facilitate Initial DEX Offerings (IDOs) on the Ethereum blockchain.\n\nThe platform allows projects to raise funds by offering tokens directly to participants through smart contract-enforced allocation and distribution logic — removing the need for centralized intermediaries.\n\n---\n\n## What is an IDO Launchpad?\nAn IDO (Initial DEX Offering) Launchpad is a platform where new crypto projects can launch their tokens to the public in a decentralized, permissionless manner.\n\nKey mechanics:\n- Projects register their token and set raise parameters\n- Participants connect their wallets and commit funds\n- Smart contracts handle allocation, vesting, and distribution\n- Tokens are claimable post-launch directly on-chain\n\n---\n\n## zkSpark Test Token\nTo validate the launchpad end-to-end, a test token **zkSpark** was deployed on Ethereum testnet.\n\n- Used to simulate a full IDO lifecycle: registration → contribution → distribution\n- Verified smart contract interactions via ethers.js\n- Tested wallet connection, transaction signing, and token claim flows with MetaMask\n\n---\n\n## Key Features\n- Wallet connect flow (MetaMask / injected providers)\n- Smart contract interaction via ethers.js\n- Token contribution and allocation tracking\n- On-chain token claim after IDO close\n- Admin panel for project registration and IDO configuration\n\n---\n\n## System Design\n- React.js frontend with wallet state management\n- ethers.js for all contract reads and writes\n- Solidity contracts for IDO logic, vesting schedules, and token distribution\n- Testnet deployment for end-to-end validation before mainnet",
+    "skillCategories": [2, 8],
+    "skillNote": "Web3 IDO Launchpad on Ethereum, ethers.js smart contract interactions, zkSpark test token on testnet"
   }
 ]

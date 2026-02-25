@@ -13,4 +13,6 @@ export interface Project {
   screenshotFolder?: string;
   features?: string[]; // bullet highlights
   architecture?: string; // markdown
+  skillCategories?: number[]; // IDs of SkillCategory this project belongs to
+  skillNote?: string; // short description shown inside skill category modal
 }

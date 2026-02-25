@@ -2,7 +2,20 @@ import { ProjectCard } from "../components/projects/ProjectCard.tsx";
 import { Project } from "../utils/types.ts";
 import projectsData from "../assets/projects.json";
 
-const projects: Project[] = projectsData as Project[];
+// Priority order: AI/LLM (1) → Full-Stack (8) → Mobile (6) → everything else
+const CATEGORY_PRIORITY: number[] = [1, 8, 6];
+
+function projectPriority(p: Project): number {
+  const cats = p.skillCategories ?? [];
+  for (let i = 0; i < CATEGORY_PRIORITY.length; i++) {
+    if (cats.includes(CATEGORY_PRIORITY[i])) return i;
+  }
+  return CATEGORY_PRIORITY.length;
+}
+
+const projects: Project[] = [...(projectsData as Project[])].sort(
+  (a, b) => projectPriority(a) - projectPriority(b)
+);
 
 export function Projects() {
   return (

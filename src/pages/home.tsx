@@ -15,8 +15,8 @@ export function Home() {
         </div>
         <div className="flex-1 text-start">
           <h2 className="text-4xl mb-5">About Me</h2>
-          <p className="text-xl mb-5">Hi, I’m Harsh Kanjariya, a developer passionate about crafting efficient and scalable solutions. With expertise in React, Node.js, and Python, I enjoy solving complex problems and turning ideas into functional applications.</p>
-          <p className="text-xl">My journey has been fueled by curiosity and a drive to continuously learn and improve. I thrive on exploring new technologies, building innovative tools, and contributing to meaningful projects.</p>
+          <p className="text-xl mb-5">Hi, I&apos;m Harsh Kanjariya &mdash; an AI &amp; Backend Systems Architect focused on designing intelligent, scalable systems that solve real problems. I specialize in building AI-powered pipelines, distributed backends, and data-driven architectures that go beyond surface-level implementations.</p>
+          <p className="text-xl">My work sits at the intersection of applied AI and systems design &mdash; from architecting LLM-integrated workflows and content engines to building robust APIs and infrastructure that scales. I care deeply about how systems think, not just how they run.</p>
         </div>
       </div>
     </Fragment>

@@ -54,7 +54,7 @@ export function Header() {
                   Harsh Kanjariya
                 </h1>
                 <p className="text-xs text-gray-500 font-medium">
-                  Full-Stack Developer
+                  AI & Backend Systems Engineer
                 </p>
               </div>
             </NavLink>
@@ -103,6 +103,21 @@ export function Header() {
               >
                 Projects
                 {location.pathname === "/projects" && (
+                  <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></span>
+                )}
+              </NavLink>
+              <NavLink
+                to="/ai-work"
+                className={({ isActive }) =>
+                  `relative px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+                    isActive
+                      ? "text-blue-600 bg-blue-50"
+                      : "text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+                  }`
+                }
+              >
+                AI Projects
+                {location.pathname === "/ai-work" && (
                   <span className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-0.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full"></span>
                 )}
               </NavLink>
@@ -194,7 +209,7 @@ export function Header() {
             </div>
             <div>
               <h2 className="font-bold text-gray-800">Harsh Kanjariya</h2>
-              <p className="text-xs text-gray-500">Full-Stack Developer</p>
+              <p className="text-xs text-gray-500">AI & Backend Systems Engineer</p>
             </div>
           </div>
           <button
@@ -324,6 +339,32 @@ export function Header() {
               />
             </svg>
             Skills
+          </NavLink>
+          <NavLink
+            to="/ai-work"
+            onClick={closeDrawer}
+            className={({ isActive }) =>
+              `flex items-center gap-3 px-4 py-3 rounded-lg font-medium transition-all duration-200 ${
+                isActive
+                  ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg"
+                  : "text-gray-700 hover:bg-gray-100"
+              }`
+            }
+          >
+            <svg
+              className="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17H3a2 2 0 01-2-2V5a2 2 0 012-2h14a2 2 0 012 2v10a2 2 0 01-2 2h-2"
+              />
+            </svg>
+            AI
           </NavLink>
           <NavLink
             to="/contact-me"

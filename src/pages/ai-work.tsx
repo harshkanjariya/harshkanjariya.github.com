@@ -15,7 +15,7 @@ const aiProjects: Project[] = (projectsData as Project[]).filter(
 function parseSection(md: string, heading: string): string {
   const regex = new RegExp(`##\\s+${heading}\\s*\\n([\\s\\S]*?)(?=\\n##|$)`, "i");
   const match = md.match(regex);
-  return match ? match[1].trim() : "";
+  return match?.[1]?.trim() ?? "";
 }
 
 function parseBullets(text: string): string[] {
@@ -64,7 +64,7 @@ export function AiWorkPage() {
           {aiProjects.map((project) => {
             const md = project.longDescription ?? "";
             const overview = parseSection(md, "Overview");
-            const problem = parseSection(md, "Problem(\\s+It\\s+Solves)?");
+            const problem = parseSection(md, "Problem(?:\\s+It\\s+Solves)?");
             const solution = parseSection(md, "Solution");
             const highlightsRaw = parseSection(md, "Technical\\s+Highlights");
             const impactRaw = parseSection(md, "Impact");
